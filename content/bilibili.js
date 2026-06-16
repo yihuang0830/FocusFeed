@@ -13,6 +13,7 @@ const FEED_SELECTORS = [
 
 function isSearchOrVideoPage() {
   return location.hostname === "search.bilibili.com" ||
+         location.hostname === "space.bilibili.com" ||
          /^\/search\//.test(location.pathname) ||
          /^\/video\//.test(location.pathname) ||
          /^\/bangumi\//.test(location.pathname) ||
